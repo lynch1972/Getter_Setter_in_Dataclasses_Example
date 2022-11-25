@@ -36,3 +36,8 @@ class Point:
         """x_val Deleter Method"""
         print("Delete x_val")
         self._x_val = None
+
+    @property
+    def function_of_x_val(self) -> float:
+        """A property which is a function of x_val"""
+        return self.x_val + self.val_a
