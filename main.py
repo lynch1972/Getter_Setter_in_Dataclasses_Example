@@ -1,4 +1,4 @@
-"""Main Module 1"""
+"""Main Module"""
 
 from points import Point
 
