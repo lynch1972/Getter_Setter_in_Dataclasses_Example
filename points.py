@@ -9,7 +9,7 @@ class Point:
 
     val_a: float = 0
     val_b: float = 0
-    _x_val: float | None = field(init=False, repr=False, default=None)
+    _x_val: float = field(init=False, repr=False, default_factory=float)
 
     def __post_init__(self):
         """Post Initializer"""
@@ -35,7 +35,7 @@ class Point:
     def x_val(self) -> None:
         """x_val Deleter Method"""
         print("Delete x_val")
-        self._x_val = None
+        self._x_val = 0.0
 
     @property
     def function_of_x_val(self) -> float:
